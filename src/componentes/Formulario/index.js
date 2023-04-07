@@ -55,7 +55,7 @@ const Formulario = (props) => {
                     obrigatorio={true}
                     label="Time"
                     itens={props.times}
-                    valo={time}
+                    valor={time}
                     aoAlterado={valor => setTime(valor)}
                 />
                 <Botao>
