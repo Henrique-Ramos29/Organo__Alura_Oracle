@@ -1,0 +1,22 @@
+.rodape {
+    text-align: center;
+    height: 213px;
+    background-color: #6278F7;
+    background-image: url(/public/imagens/fundo.png);
+}
+
+.rodape img {
+    text-align: center;
+    margin-top: 72px;
+}
+
+.rodape p {
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center ;
+}
+
+
+
+
