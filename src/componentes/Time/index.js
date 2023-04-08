@@ -9,21 +9,21 @@ const Time = (props) => {
 
     return (
 
-        //props.colaboradores.length > 0 && <sectio ..........
-
-        (props.colaboradores.length > 0) ? <section className='time' style={css}>
+        props.colaboradores.length > 0 && <section className='time' style={css}>
             <h3 style={cssbordinha}>{props.nome}</h3>
             <div className='colaboradores'>
-                {props.colaboradores.map(colaborador => <Colaborador
-                    corDeFundo = {props.corPrimaria} 
-                    key={colaborador.nome}
-                    nome={colaborador.nome}
-                    cargo={colaborador.cargo}
-                    imagem={colaborador.imagem}
-                />)}
+                {props.colaboradores.map(colaborador => {
+                    console.log(<Colaborador key={colaborador.nome} nome={colaborador.nome} cargo={colaborador.cargo} imagem={colaborador.imagem} corDeFundo={props.corPrimaria} />)
+                    return <Colaborador
+                        key={colaborador.nome}
+                        nome={colaborador.nome}
+                        cargo={colaborador.cargo}
+                        imagem={colaborador.imagem}
+                        corDeFundo={props.corPrimaria}
+                    />
+                })}
             </div>
         </section>
-            : ''
     )
 }
 
