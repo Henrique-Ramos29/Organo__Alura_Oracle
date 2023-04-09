@@ -7,3 +7,4 @@ const Botao = ({texto}) => {
 }
 
 export default Botao
+
